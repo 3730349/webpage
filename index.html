@@ -6,28 +6,35 @@
 	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link rel="stylesheet" type="text/css" href="swiper-4.3.5.min.css">
 	<link rel="stylesheet" type="text/css" href="icon/iconfont.css">
 </head>
 <style type="text/css">
-	@media (max-width: 750px) {
+	@media (max-width: 768px) {
 		.cu-header-small {
 		    display: block;
 		}
-
-	}
-	@media (max-width: 750px) {
+		.slide-box2  {
+			 display: block;
+		}
 		.nav {
 		    display: none;
+		}
+		.plan {
+		    display: none;
+		}
+		.market {
+			margin-top: -2.5%;
 		}
 	}
 </style>
 <body>
 	<div class="box">
 		<div class="nav" id="nav">
-			<div class="logo">
+			<!-- <div class="logo"> -->
 				<!-- <img src="img/love.png"> -->
-			</div>
+			<!-- </div> -->
 			<div class="nav_btn">
 				<a href="#swiper" class="nav_btn1 nav_btn3">
 					<h3>首&nbsp页</h3>
@@ -39,14 +46,13 @@
 					<h3>企业文化</h3>
 					<h3 class="nav_btn2">Enterprise&nbspCulture</h3></a>	
 				<a href="#au" class="nav_btn1 nav_btn6">
-					<h3>关</h3>
+					<h3>关于我们</h3>
 					<h3 class="nav_btn2">About&nbspUs</h3></a>
 			</div>
 		</div>
 		<div id="cu-header-small" class="cu-header-small">
-		    <div class="tool">
-		        <i class="iconfont" id="sp_btn">&#xeb04;</i>
-		    </div>
+		        
+		    <i class="iconfont" id="sp_btn">&#xeb04;</i>
 
 		    <div class="menu-list" id="menu-list">
 				<a href="#swiper" class=" nav_btn3 item">
@@ -72,7 +78,46 @@
 		    <div class="swiper-button-next"></div>
 	    	<div class="swiper-button-prev"></div>
 	    	<div class="swiper-pagination"></div>
-	    </div>
+	    </div>	
+
+   		<div class="slide-box2">
+   			<div class="slide-box">
+		        <div class="slide-item">
+					<img src="img/5.png" class="plan_btn_sm">
+		        	<div>产品规划</div>
+		        </div>
+		        <div class="slide-item">
+		        	<img src="img/5.png" class="plan_btn_sm">
+		        	<div>产品规划</div>
+		        </div>
+		        <div class="slide-item">
+		        	<img src="img/5.png" class="plan_btn_sm">
+		        	<div>产品规划</div>
+		        </div>
+		        <div class="slide-item">
+					<img src="img/5.png" class="plan_btn_sm">
+		        	<div>产品规划</div>
+		        </div>
+		        	
+		        <div class="slide-item">
+					<img src="img/5.png" class="plan_btn_sm">
+		        	<div>产品规划</div>
+		        </div>	        
+		        <div class="slide-item">
+					<img src="img/5.png" class="plan_btn_sm">
+		        	<div>产品规划</div>
+		        </div>	       
+		         <div class="slide-item">
+					<img src="img/5.png" class="plan_btn_sm">
+		        	<div>产品规划</div>
+		        </div>		         
+		        <div class="slide-item">
+					<img src="img/5.png" class="plan_btn_sm">
+		        	<div>产品规划</div>
+		        </div>
+		        	
+    	</div>
+    </div>
 
 	    <ul class="plan">
 	    	<li><img src="img/5.png" class="plan_btn"><div>产品规划</div></li>
@@ -84,6 +129,8 @@
 	    	<li><img src="img/9.png" class="plan_btn"><div>咨询</div></li>
 	    	<li><img src="img/9.png" class="plan_btn"><div>咨询</div></li>
 	    </ul>
+
+
 
 	    <div class="market">
 	    	<div class="market_con">产品规划</div>
@@ -99,8 +146,8 @@
 	<h3>-</h3>
 	<img src="img/10.png" class="market_img">
 </div> -->
-	    	
 	    </div>
+
 	    <div class="about" id="au">
 	    	<h3 class="L_line"></h3>
 	    	<h3 class="R_line"></h3>
@@ -113,12 +160,14 @@
 		    	<li><img src="img/aq.png"><div>安全可靠</div></li>
 		    </ul>
 	    </div>
+
 		<div class="apply">
 			<h2 class="apply_title">应用行业广泛</h2>
 			<h3 class="apply_line">——</h3>
 			<img src="img/11.png" class="apply_img1">
 			<img src="img/12.png" class="apply_img2" >
 		</div>
+
 		<div class="foot">
 			<div class="container">
    				<div class="row">
@@ -159,10 +208,8 @@
 		</div>
 	    
 	</div>
-	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
 <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
- 
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 <script type="text/javascript" src="index.js"></script>

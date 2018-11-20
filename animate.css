@@ -1,0 +1,45 @@
+.slide-box2_animate_init,
+.foot_animate_init,
+.apply_img2_animate_init,
+.plan_animate_init{
+    opacity: 0;
+    transform: translate(0, 100%);  
+}
+.about_animate_init {
+	opacity: 0;
+}
+
+.apply_img1_animate_init,
+.about_img_animate_init,
+.nav_animate_init {
+	opacity: 0;
+    transform: translate(100%, 0);
+}
+.cu-header-small_animate_init,
+.apply_title_animate_init,
+.apply_line_animate_init{
+	opacity: 0;
+    transform: translate(-100%, 0);
+}
+.swiper-container_animate_init,
+.market_animate_init {
+	opacity: 0;
+    transform: translate(0, -100%); 
+}
+.cu-header-small_animate_done,
+.slide-box2_animate_done,
+.foot_animate_done,
+.apply_title_animate_done,
+.apply_line_animate_done,
+.apply_img1_animate_done,
+.apply_img2_animate_done,
+.apply_img1_animate_done,
+.about_animate_done,
+.market_animate_done,
+.nav_animate_done,
+.swiper-container_animate_done,
+.plan_animate_done{
+    opacity: 1;
+    transform: none;
+    transition:all 1.5s;
+}

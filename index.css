@@ -6,20 +6,8 @@
 	height: 100%;
 	overflow: hidden;
 }
-	@media (max-width: 750px) {
-		.cu-header-small {
-		    display: block;
-		}
-
-	}
-	@media (max-width: 750px) {
-		.nav {
-		    display: none;
-		}
-	}
 .nav {
 	width: 100%;
-	height: 70px;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -30,7 +18,6 @@
 }
 .cu-header-small {
 	width: 100%;
-	overflow: hidden;
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -39,12 +26,19 @@
 }
 .tool {
 	width: 100%;
-	height: 70px;
+	height: 100%;
+
 }
 #sp_btn {
 	float: right;
 	margin-right: 50px;
 	color: white;
+}
+.nav_btn1:hover {
+	text-decoration: none;
+}
+.nav_btn1:hover h3 {
+	color: red;
 }
 .menu-list {
 	margin-top: 10px;
@@ -77,7 +71,7 @@
 .nav .nav_btn {
 	float: right;
 	margin-right: 10%;
-	margin-top: 16px;
+	margin-top: 1%;
 	font-size: 1em;
 
 }
@@ -135,11 +129,13 @@
 
 /*规划*/
 .plan {
-	margin-top: 10px;
+	width: 100%;
+	top: 50%;
 	display: -webkit-box;
 	list-style: none;
 }
 .plan li {
+	margin: 10px;
 	-webkit-box-flex:1;
 	text-align: center;
 }
@@ -153,11 +149,36 @@
 	font-weight: bold;
 	text-align: center;
 }
+.slide-box2 {
+	overflow: hidden;
+	margin-top: 0;
+	display: none;
+}
+.slide-box{
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+.selector::-webkit-scrollbar { display: none }
+.element { -ms-overflow-style: none; }
+.element { overflow: -moz-scrollbars-none; }
+
+.slide-item{
+    margin: 10px;
+}
+.slide-box .slide-item {
+	width: 28%;
+	text-align: center;
+}	
+.slide-box .slide-item img{
+	width: 50%;
+}
 
 .market {
 	width: 100%;
 	height: 350px;
-	margin-top: 15px;
+	margin-top: 10px;
 	position: relative;
 	overflow: hidden;
 
@@ -270,10 +291,11 @@
 	/*-webkit-box-flex:1;*/
 	/*float: left;*/
 	/*margin: 2% 4%;*/
-	/*overflow: hidden;*/
+	overflow: hidden;
 	text-align: center;
 	margin: 0 auto;
 }
+
 .foot1_1,.foot1_2,.foot2_1,.foot2_2,.foot3_1,.foot3_2,.foot4_1,.foot4_2 {
 	float: left;
 	margin-left: 5px;
@@ -281,52 +303,13 @@
 
 }
 
-.foot_animate_init,
-.apply_img2_animate_init,
-.plan_animate_init{
-    opacity: 0;
-    transform: translate(0, 100%);  
-}
-.about_animate_init {
-	opacity: 0;
-}
-.apply_img1_animate_init,
-.about_img_animate_init,
-.nav_animate_init {
-	opacity: 0;
-    transform: translate(100%, 0);
-}
-.apply_title_animate_init,
-.apply_line_animate_init{
-	opacity: 0;
-    transform: translate(-100%, 0);
-}
-.swiper-container_animate_init,
-.market_animate_init {
-	opacity: 0;
-    transform: translate(0, -100%); 
-}
-.foot_animate_done,
-.apply_title_animate_done,
-.apply_line_animate_done,
-.apply_img1_animate_done,
-.apply_img2_animate_done,
-.apply_img1_animate_done,
-.about_animate_done,
-.market_animate_done,
-.nav_animate_done,
-.swiper-container_animate_done,
-.plan_animate_done{
-    opacity: 1;
-    transform: none;
-    transition:all 1.5s;
-}
 .nav_btnadd3 a.nav_btn3,
 .nav_btnadd4 a.nav_btn4,
 .nav_btnadd5 a.nav_btn5,
 .nav_btnadd6 a.nav_btn6{
     color: red;
 }
+
 .nav_btnadd3 a.nav_btn3 .nav_btn2,
 .nav_btnadd4 a.nav_btn4 .nav_btn2,
 .nav_btnadd5 a.nav_btn5 .nav_btn2,
