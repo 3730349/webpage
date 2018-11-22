@@ -4,19 +4,22 @@
 		}
 		//添加类
 		var addClass = function (element , _className) {
-
+			//获取此元素的所有类
 		  var className = element.className.split(' ');
 		  var classNameMap = {}
 
 		  for(var i=0;i<className.length;i++){
-		    classNameMap[ className[i]] = 1;
+		  	//给对象属性赋值，值随意
+		    classNameMap[className[i]] = 1;
 		  }
 		  classNameMap[_className] = 1;
 
 		  className = [];
 		  for(i in classNameMap){
+		  	//将值存入数组
 		    className.push(i);
 		  }
+		  //放入字符串中并用空格隔开
 		  element.className = className.join(' ');
 
 		}
@@ -28,6 +31,7 @@
 		  for(var i=0;i<className.length;i++){ 
 		    classNameMap[ className[i]] = 1;
 		  }
+		  //js删除对象属性
 		  delete classNameMap[_className];
 		  className = [];
 		  for(i in classNameMap){
@@ -143,7 +147,8 @@ window.onload=function () {
 
 	// 轮播
 	var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
+     //间隔
+      // spaceBetween: 30,
       centeredSlides: true,
       //自动切换
       autoplay: {
@@ -161,5 +166,5 @@ window.onload=function () {
         prevEl: '.swiper-button-prev',
       },
 	});
-}
+  }
 }

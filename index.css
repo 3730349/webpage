@@ -33,6 +33,7 @@
 	float: right;
 	margin-right: 50px;
 	color: white;
+	font-size:24px;
 }
 .nav_btn1:hover {
 	text-decoration: none;
@@ -60,18 +61,23 @@
 .menu-list .item h3 {
 	font-size: 1em;
 }
-.nav .logo {
-	width: 80px;
-	height: 80px;
+.cu-header-small .logo,.nav .logo {
+	width:5%;
+	/*height: 100%;*/
+	margin-left: 10%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	float: left;
 }
-.nav .logo img{
-	background-size: 100%;
+.cu-header-small .logo img,.nav .logo img{
+	width:80%;
+	margin: auto;
 }
 .nav .nav_btn {
 	float: right;
 	margin-right: 10%;
 	margin-top: 1%;
+	margin-bottom: 1%;
 	font-size: 1em;
 
 }
@@ -143,12 +149,16 @@
 	width: 70%;
 	height: 100%;
 }
+/*.plan li:hover div{
+	background: rgba(0,0,0,.1); 
+}*/
 .plan li div{
 	margin-top: 5px;
 	font-size: 1em;
 	font-weight: bold;
 	text-align: center;
 }
+/*手机版*/
 .slide-box2 {
 	overflow: hidden;
 	margin-top: 0;
