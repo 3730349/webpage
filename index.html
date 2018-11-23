@@ -4,14 +4,35 @@
 	<meta charset="UTF-8">
 	<title>公司官网</title>
 	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link rel="stylesheet" type="text/css" href="swiper-4.3.5.min.css">
+	<!-- <link rel="stylesheet" href="certify-swiper4/css/swiper.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+	<link rel="stylesheet" href="certify-swiper4/css/certify.css">
+	<script type="text/javascript">
+(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=640){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
 
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
 </head>
 <style type="text/css">
+	/*html{font-size:62.5%}*/
 	@media (max-width: 768px) {
 		.cu-header-small {
 		    display: block;
@@ -27,6 +48,7 @@
 		}
 	}
 </style>
+
 <body>
 	<div class="box">
 		<div class="nav" id="nav">
@@ -69,114 +91,132 @@
 					</a> 
 		    </div>
 		</div>
-		<div class="swiper-container" id="swiper">
+		<div class="swiper-container" id="swiper1">
 		    <div class="swiper-wrapper">
 		      <div class="swiper-slide"><img src="img/index_banner1.png"></div>
 		      <div class="swiper-slide"><img src="img/index_banner3.png"></div>   
 		      <div class="swiper-slide"><img src="img/index_banner1.png"></div>
 		    </div> 
-		    <div class="swiper-button-next"></div>
-	    	<div class="swiper-button-prev"></div>
-	    	<div class="swiper-pagination"></div>
+		    <div class="swiper-button-next" id="swiper1_btn_next1"></div>
+	    	<div class="swiper-button-prev" id="swiper1_btn_prev1"></div>
+	    	<div class="swiper-pagination" ></div>
 	    </div>	
-
-   		<div class="slide-box2">
-   			<div class="slide-box">
-		        <div class="slide-item">
-					<img src="img/5.png" class="plan_btn_sm">
-		        	<div>产品规划</div>
-		        </div>
-		        <div class="slide-item">
-		        	<img src="img/5.png" class="plan_btn_sm">
-		        	<div>产品规划</div>
-		        </div>
-		        <div class="slide-item">
-		        	<img src="img/5.png" class="plan_btn_sm">
-		        	<div>产品规划</div>
-		        </div>
-		        <div class="slide-item">
-					<img src="img/5.png" class="plan_btn_sm">
-		        	<div>产品规划</div>
-		        </div>
-		        <div class="slide-item">
-					<img src="img/5.png" class="plan_btn_sm">
-		        	<div>产品规划</div>
-		        </div>	        
-		        <div class="slide-item">
-					<img src="img/5.png" class="plan_btn_sm">
-		        	<div>产品规划</div>
-		        </div>	       
-		         <div class="slide-item">
-					<img src="img/5.png" class="plan_btn_sm">
-		        	<div>产品规划</div>
-		        </div>		         
-		        <div class="slide-item">
-					<img src="img/5.png" class="plan_btn_sm">
-		        	<div>产品规划</div>
-		        </div>
-		        	
-    	</div>
-    </div>
-
-	    <ul class="plan">
-	    	<li><img src="img/5.png" class="plan_btn"><div>产品规划</div></li>
-	    	<li><img src="img/6.png" class="plan_btn"><div>商城</div></li>
-	    	<li><img src="img/7.png" class="plan_btn"><div>UI设计</div></li>
-	    	<li><img src="img/8.png" class="plan_btn"><div>文章</div></li>
-	    	<li><img src="img/9.png" class="plan_btn"><div>咨询</div></li>
-	    	<li><img src="img/8.png" class="plan_btn"><div>文章</div></li>
-	    	<li><img src="img/9.png" class="plan_btn"><div>咨询</div></li>
-	    	<li><img src="img/9.png" class="plan_btn"><div>咨询</div></li>
-	    </ul>
-
-	    <div class="market">
-	    	<div class="market_con">产品规划</div>
-	    	<div class="market_con">商城</div>
-	    	<div class="market_con">UI设计</div>
-	    	<div class="market_con">文章</div>
-	    	<div class="market_con">咨询</div>	    	
-	    	<div class="market_con">文章</div>
-	    	<div class="market_con">咨询</div>
-	    	<div class="market_con">咨询</div>
-<!-- 	    	<div class="market_title">
-	<h3>小程序<span> . </span>大市场</h3>
-	<h3>-</h3>
-	<img src="img/10.png" class="market_img">
-</div> -->
+	    <div class="development">
+    		<h1>开发服务</h1>
+    		<h4>整合多平台技术,提供高效优质的应用开发服务</h4>
+	    	<img src="images/zfwl.gif">
 	    </div>
+	    <div id="certify">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/gpxt.gif" class="slide_img1"/>
+						<img src="images/13.png" class="slide_img2">
+						<h1>公排系统</h1>
+						<p>公共系统提供多种排位模式及奖励，鼓励各级会员开拓市场的积极性，在确保每个人都有丰富的奖励的同时，又能给团队伙伴带来利益。</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/jtfh.gif"  class="slide_img1"/>
+						<img src="images/17.png" class="slide_img2">
+						<h1>静态分红</h1>
+						<p>根据全站营业额的利润比例，给相应级别的会员发放静态奖金的静分红系统。</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/qkl.gif"  class="slide_img1"/>
+						<img src="images/16.png" class="slide_img2">
+						<h1>区块链</h1>
+						<p>开发区块链虚拟货币，钱包交易系统，提供全球化虚拟货币交易，打造全新数字交易系统。</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/sj.gif"  class="slide_img1"/>
+						<img src="images/15.png" class="slide_img2">
+						<h1>三级</h1>
+						<p>三级分销分利模式、裂变式传播、快速拓粉、让商场火爆起来。</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/wxj.gif"  class="slide_img1"/>
+						<img src="images/14.png" class="slide_img2">
+						<h1>无极限</h1>
+						<p>拥有主流的分销管理功能，轻松开始无限分销层级，统一管理更方便。</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="swiper-pagination"></div> -->
+			<div class="swiper-button-prev" id="swiper2_btn_prev1"></div>
+			<div class="swiper-button-next" id="swiper2_btn_next1"></div>
+		</div>
 
-	    <div class="about" id="au">
+		<div class="introduce">
+			<div class="introduce1">
+				<div class="introduce1_Le">
+					<div>3+3分销</div>
+					<div>3+3分销</div>
+					<div>3+3分销</div>
+					<div>3+3分销</div>
+					<div>3+3分销</div>
+					<div>3+</div>
+				</div>
+				<div class="introduce1_Ri">
+					<div>
+						<img src="images/introduce1_1.gif">
+					</div>
+					<div>
+						<img src="images/introduce1_2.gif">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="programme">
+			<h1 class="programme1">解决方案</h1>
+			<div class="programme2">
+				<div>
+					<img src="images/1.png">
+					<h1>区块链解决方案</h1>
+					<h5>积分商城、手机挖矿、商品潮源、游戏宠物、数字钱包、货币交易所</h5>
+				</div>
+				<div>
+					<img src="images/2.png">
+					<h1>区块链解决方案</h1>
+					<h5>积分商城、手机挖矿、商品潮源、游戏宠物、数字钱包、货币交易所</h5>
+				</div>
+				<div>
+					<img src="images/3.png">
+					<h1>区块链解决方案</h1>
+					<h5>积分商城、手机挖矿、商品潮源、游戏宠物、数字钱包、货币交易所</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="apply">
+			<img src="images/mb.gif" class="apply_img2" >
+		</div>
+		<div class="about" id="au">
 	    	<h3 class="L_line"></h3>
 	    	<h3 class="R_line"></h3>
 	    	<span class="us">关于我们</span>
 	    	<h3 class="client">Our&nbsp&nbspClient</h3>
 		    <ul class="about_img">
-		    	<li><img src="img/yf.png"><div>项目研发</div></li>
-		    	<li><img src="img/zy.png"><div>专业团队</div></li>
-		    	<li><img src="img/js.png"><div>技术创新</div></li>
-		    	<li><img src="img/aq.png"><div>安全可靠</div></li>
+		    	<li><img src="images/4.png"><div>项目研发</div></li>
+		    	<li><img src="images/5.png"><div>专业团队</div></li>
+		    	<li><img src="images/6.png"><div>技术创新</div></li>
+		    	<li><img src="images/7.png"><div>安全稳定</div></li>
+		    	<li><img src="images/8.png"><div>优质服务</div></li>
 		    </ul>
 	    </div>
-
-		<div class="apply">
-			<h2 class="apply_title">应用行业广泛</h2>
-			<h3 class="apply_line">——</h3>
-			<img src="img/11.png" class="apply_img1">
-			<img src="img/12.png" class="apply_img2" >
-		</div>
 
 		<div class="foot">
 			<div class="container">
    				<div class="row">
 			      	<div class="foot1 col-xs-12 col-sm-3" >
-						<img src="img/timg.png" class="foot1_1">
+						<img src="images/9.jpg" class="foot1_1">
 						<div class="foot1_2">
 							<h5>创新科技</h5>
 							<h5>SCIENCE</h5>
 						</div>
 					</div>
 					<div class="foot2 col-xs-12 col-sm-3">
-						<img src="img/13.png" class="foot2_1">
+						<img src="images/10.jpg" class="foot2_1">
 						<div class="foot2_2">
 							<h5>售后电话&nbspCUSTOMER</h5>
 							<h5>1285-4517951</h5>
@@ -185,14 +225,14 @@
 						</div>
 					</div>			
 					<div class="foot3 col-xs-12 col-sm-3">
-						<img src="img/14.png" class="foot3_1">
+						<img src="images/11.jpg" class="foot3_1">
 						<div class="foot3_2">
 							<h5>加盟热线：&nbsp 16554697854</h5>
 							<h5>JOIN &nbspHOTLINE</h5>
 						</div>
 					</div>			
 					<div class="foot4 col-xs-12 col-sm-3">
-						<img src="img/15.png" class="foot4_1">
+						<img src="images/12.jpg" class="foot4_1">
 						<div class="foot4_2">
 							<h5>官方微信&nbspWECHAT</h5>
 							<br>
@@ -209,7 +249,8 @@
 <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="index2.js"></script>
 <script type="text/javascript" src="swiper-4.3.5.min.js"></script>
 <script type="text/javascript" src="lwm.js"></script>
+
 </html>

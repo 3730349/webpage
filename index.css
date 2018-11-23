@@ -4,7 +4,6 @@
 }
 .box {
 	height: 100%;
-	overflow: hidden;
 }
 .nav {
 	width: 100%;
@@ -103,12 +102,11 @@
 }
 
 /*轮播*/
-.swiper-container {
+#swiper1 {
   width: 100%;
-  /*height: 30%;*/
   top: 0px;
 }
-.swiper-slide {
+#swiper1 .swiper-wrapper .swiper-slide {
 
   text-align: center;
   font-size: 18px;
@@ -127,91 +125,107 @@
   -webkit-align-items: center;
   align-items: center;
 }
-.swiper-wrapper img {
+#swiper1 .swiper-wrapper .swiper-slide img {
 	width: 100%;
 	height: 100%;
 	margin-top: 0px;
 }
-
-/*规划*/
-.plan {
+.development {
 	width: 100%;
-	top: 50%;
-	display: -webkit-box;
-	list-style: none;
-}
-.plan li {
-	margin: 10px;
-	-webkit-box-flex:1;
+	margin-top: 30px;
 	text-align: center;
 }
-.plan li img{
-	width: 70%;
-	height: 100%;
+.development img{
+	width: 100%;
 }
-/*.plan li:hover div{
-	background: rgba(0,0,0,.1); 
-}*/
-.plan li div{
-	margin-top: 5px;
+.development h1{
+	font-size: 2.5em;
+}
+.development h4{
 	font-size: 1em;
-	font-weight: bold;
-	text-align: center;
-}
-/*手机版*/
-.slide-box2 {
-	overflow: hidden;
-	margin-top: 0;
-	display: none;
-}
-.slide-box{
-    display: -webkit-box;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling:touch;
+	margin-top: 5px;
 }
 
-.selector::-webkit-scrollbar { display: none }
-.element { -ms-overflow-style: none; }
-.element { overflow: -moz-scrollbars-none; }
-
-.slide-item{
-    margin: 10px;
+.introduce {
+	width: 80%;
+	/*height: 1000px;*/
+	margin: 50px auto;
 }
-.slide-box .slide-item {
-	width: 28%;
-	text-align: center;
-}	
-.slide-box .slide-item img{
-	width: 50%;
-}
-
-.market {
+.introduce1 {
 	width: 100%;
-	height: 350px;
-	margin-top: 10px;
 	position: relative;
 	overflow: hidden;
+}
+.introduce1 .introduce1_Le {
+	width: 15%;
+	float: left;
+}
+.introduce1 .introduce1_Le div {
+	/*list-style: none;*/
+	font-size: 1em;
+	border: 1px solid;
+	text-align: center;
+	padding: 15% 3%;
+	 
+}
+.introduce1 .introduce1_Ri {
+	width: 85%;
+	height: 100%;
+	float: right;
+}
+.introduce1 .introduce1_Ri div {
+	/*list-style: none;*/
+	width: 100%;
+	height: 50%;
+}
+.introduce1 .introduce1_Ri div img {
+	width: 100%;
+	height: 100%;
+}
 
-}
-.market_con {
+
+.programme {
 	width: 100%;
-	height: 350px;
-	position: absolute;
-	background: pink;
+	margin-top: 20px;
+}
+.programme1 {
 	text-align: center;
-	line-height: 350px;
 	font-size: 2em;
+	font-weight: bold;
 }
-.market_title {
-	margin-top: 5px;
-}
-.market_title h3 {
+.programme2 {
+	margin-top: 20px;
+	width: 80%;
+	/*width: 600px;*/
+	margin: auto;
+	display: -webkit-flex;
+	display: flex;
 	text-align: center;
+	justify-content:center;
 }
-.market_img {
-	width: 100%;
+.programme2 div {
+	width: 30%;
+	height: 30%;
+	-webkit-box-flex:1;
+	border: 2px solid rgba(0,0,0,.5);
+	border-radius: 5%;
+	margin: 10px 20px;
 }
-/*关于我们*/
+.programme2 div img{
+	width: 60%;
+	/*padding: 10px 10px;*/
+	
+}
+.programme2 div h1{
+	/*padding: 10px 10px;*/
+	font-size: 1.2%;
+	font-weight: bold;
+	
+}.programme2 div h5{
+	/*padding: 10px 10px;*/
+	font-size: 0.5%;
+	
+}
 .about {
 	/*height: 50px;*/
 	margin-top: 40px;
@@ -252,9 +266,12 @@
 	-webkit-box-flex:1;
 	text-align: center;
 }
+.about_img li img{
+	width: 60%;
+}
 .about_img li div{
 	margin-top: 5px;
-	font-size: 0.8em;
+	font-size: 0.6em;
 	font-weight: bold;
 	text-align: center;
 }
@@ -272,9 +289,12 @@
 .foot {
 	margin-top: 5%;
 	/*display: -webkit-box;*/
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 	/*overflow: hidden;*/
 	font-size: 1em;
+	background: rgba(0,0,0,.8);
+	color: white;
+	padding-top: 20px;
 	
 }
 .foot1_1{
@@ -282,28 +302,25 @@
 	/*margin-top: -10px;*/
 }
 .foot2_1 {
-	width: 30%;
-	margin-top: -8px;
+	width: 25%;
+	/*margin-top: -8px;*/
 	/*margin-top: -20px;*/
 }
 .foot3_1 {
-	width: 23%;
+	width: 25%;
 	/*margin-top: -9px;*/
 
 }
 .foot4_1 {
-	width: 24%;
+	width: 25%;
 	/*margin-top: -1px;*/
 
 }
 
 .foot .foot1,.foot .foot2,.foot .foot3,.foot .foot4 {
-	/*-webkit-box-flex:1;*/
-	/*float: left;*/
-	/*margin: 2% 4%;*/
 	overflow: hidden;
 	text-align: center;
-	margin: 0 auto;
+	margin: 10px auto;
 }
 
 .foot1_1,.foot1_2,.foot2_1,.foot2_2,.foot3_1,.foot3_2,.foot4_1,.foot4_2 {
