@@ -139,48 +139,46 @@
 	width: 100%;
 }
 .development h1{
-	font-size: 2.5em;
+	font-size: 0.3rem;
 }
 .development h4{
-	font-size: 1em;
-	margin-top: 5px;
+	font-size: 0.2rem;
+	margin-top: 0.3rem;
 }
 
 .introduce {
 	width: 90%;
-	/*height: 1000px;*/
+	margin: 50px auto;
+}
+.int {
+	width: 100%;
+	height: 100%;
 	position: relative;
 	overflow: hidden;
-	margin: 50px auto;
 }
 .introduce1 {
 	width: 100%;
 	position: absolute;
-	/*overflow: hidden;*/
 	display: none;
 }
 .introduce .introduce1:nth-child(1) {
 	display: block;
 }
-/*.introduce2 {
-	width: 100%;
-	position: absolute;
-}*/
 .introduce1 .introduce1_Le {
 	width: 18%;
-	/*width: 1rem;*/
-	float: left;
+	/*height: 50%;*/
+	position: absolute;
 }
 .introduce1 .introduce1_Le div {
-	/*list-style: none;*/
 	width: 100%;
 	height: 0.5rem;
 	font-size: 0.2rem;
 	line-height: 0.5rem;
-	border: 1px solid pink;
+	border: 1px solid rgba(0, 183, 212, 0.1);
 	text-align: center;
 	font-weight: bold;
 	border-radius: 3%;
+	background: rgba(0, 183, 212, 0.1);
 	 
 }
 .introduce1 .introduce1_Le div:hover {
@@ -191,12 +189,22 @@
 .introduce1 .introduce1_Ri {
 	width: 82%;
 	height: 100%;
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.introduce1_con {
+	display: none;
+}
+.introduce1_Ri div:nth-child(1){
+	display: block;
+}
+.back {
+	background: rgba(0, 183, 212, 0.59);
 }
 .introduce1 .introduce1_Ri div {
-	/*list-style: none;*/
-	width: 100%;
-	height: 50%;
+	position: absolute;
+	top: 0;
 }
 .introduce1 .introduce1_Ri div img {
 	width: 100%;
@@ -216,7 +224,6 @@
 .programme2 {
 	margin-top: 20px;
 	width: 100%;
-	/*width: 600px;*/
 	margin: auto;
 	display: -webkit-flex;
 	display: flex;
@@ -224,8 +231,6 @@
 	justify-content:center;
 }
 .programme2 div {
-/*	width: 30%;
-	height: 30%;*/
 	width:3rem;
 	height: 3rem;
 	-webkit-box-flex:1;
@@ -235,22 +240,18 @@
 }
 .programme2 div img{
 	width: 60%;
-	/*padding: 10px 10px;*/
 	
 }
 .programme2 div h1{
-	/*padding: 10px 10px;*/
 	font-size: 0.2rem;
 	font-weight: bold;
 	
 }
 .programme2 div h5{
-	/*padding: 10px 10px;*/
 	font-size: 0.15rem;
 	
 }
 .about {
-	/*height: 50px;*/
 	margin-top: 40px;
 	text-align: center;
 	font-size: 0.3rem;
@@ -279,7 +280,6 @@
 	color: rgba(0,0,0,0.5);
 }
 .about_img {
-	/*width: 70%;*/
 	margin: 10px auto;
 	margin-top: 10px;
 	display: -webkit-box;
@@ -311,9 +311,7 @@
 }
 .foot {
 	margin-top: 5%;
-	/*display: -webkit-box;*/
-	/*margin-bottom: 20px;*/
-	/*overflow: hidden;*/
+	padding: 0.1rem 0.1rem;
 	background: rgba(0,0,0,.8);
 	color: white;
 	
@@ -323,35 +321,23 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.foot1_1{
-	width: 0.8rem;
-	/*margin-top: -10px;*/
-}
-.foot2_1 {
-	width: 0.8rem;
-	/*margin-top: -8px;*/
-	/*margin-top: -20px;*/
-}
-.foot3_1 {
-	width: 0.8rem;
-	/*margin-top: -9px;*/
-
-}
-.foot4_1 {
-	width: 0.8rem;
-	/*margin-top: -1px;*/
-
+.foot1_1,.foot2_1,.foot3_1,.foot4_1{
+	width: 0.5rem;
+	margin-top: -1.5%;
 }
 
 .foot .foot1,.foot .foot2,.foot .foot3,.foot .foot4 {
 	overflow: hidden;
 	text-align: center;
 	margin: 10px auto;
+	padding-left: 0; 
+	padding-right: 0; 
 }
 
 .foot1_1,.foot1_2,.foot2_1,.foot2_2,.foot3_1,.foot3_2,.foot4_1,.foot4_2 {
 	float: left;
-	margin-left: 5px;
+	margin-left: 0.1rem;
+
 }
 .foot4_2 img{
 	width: 1rem;

@@ -53,22 +53,44 @@
 				menu=true;
 			}
 		}
-
-window.onload=function () {
-	for (var i = 0; i <getByClass("introduce1").length; i++) {
-		console.log($('.introduce1').eq(i).css("display")==='block')
-		if ($('.introduce1').eq(i).css("display")==='block') {
-			getByClass("introduce")[0].style.height=getByClass("introduce1")[i].offsetHeight+"px";
-		}
-	}
-
-	window.onresize=function(){
-		for (var i = 0; i <getByClass("introduce1").length; i++) {
-			if ($('.introduce1').eq(i).css("display")==='block') {
-				getByClass("introduce")[0].style.height=getByClass("introduce1")[i].offsetHeight+"px";
+		var hei1 = function (h1) {
+			var aa=getByClass("introduce1")[h1];
+			var b=aa.getElementsByClassName("introduce1_con")[0];
+			for (var i = 0; i <getByClass("introduce1").length; i++) {
+				if ($('.introduce1').eq(i).css("display")==='block') {
+					if (b.offsetHeight<=176) {
+						getByClass("introduce1")[h1].style.height=176+"px";
+					}else {
+						getByClass("introduce1")[h1].style.height=b.offsetHeight+"px";
+					}
+					
+					getByClass("int")[0].style.height=getByClass("introduce1")[h1].offsetHeight+"px";
+				}
 			}
 		}
-	}
+
+		var hei2 = function (h2) {
+			for (var i = 0; i <getByClass("introduce1").length; i++) {
+				if ($('.introduce1').eq(i).css("display")==='block') {
+					if (getByClass("introduce1_con")[h2].offsetHeight<=176) {
+						getByClass("introduce1")[i].style.height=176+"px";
+					}else {
+						getByClass("introduce1")[i].style.height=getByClass("introduce1_con")[h2].offsetHeight+"px";
+					}
+					// getByClass("introduce1")[i].style.height=getByClass("introduce1_con")[h2].offsetHeight+"px";
+					getByClass("int")[0].style.height=getByClass("introduce1")[i].offsetHeight+"px";
+				}
+			}
+		}
+
+		window.onload=function () {
+				/*开始加载时*/
+				hei1(0);
+				var res_h;
+		window.onresize=function(){
+				/*窗口变化时触发*/
+				hei2(res_h);
+		}
 
 	
 	// var nav1=document.getElementById("nav1");
@@ -89,6 +111,36 @@ window.onload=function () {
 	// 	addClass( getByClass('swiper-container')[0] , 'swiper-container_animate_done' );
 		
 	// },100)
+
+	/*点击轮播切换*/
+	for (let i = 0; i < getByClass('lb').length; i++) {
+		getByClass('lb')[i].onclick = function () {
+			
+		  for (var j = 0; j < getByClass('introduce1').length; j++) {
+			getByClass('introduce1')[j].style.display="none";
+		  }
+		  getByClass('introduce1')[i].style.display="block";
+		  /*将introduce1下的第一个introduce1_con显示*/
+		  getByClass('introduce1')[i].getElementsByClassName("introduce1_con")[0].style.display="block";
+		  hei1(i);
+		}
+
+	}
+	/*点击按钮切换*/
+	for (let i = 0; i < getByClass('introduce1_btn').length; i++) {
+		getByClass('introduce1_btn')[i].onclick = function () {
+
+			for (var j = 0; j < getByClass('introduce1_con').length; j++) {
+				getByClass('introduce1_con')[j].style.display="none";
+				removeClass(getByClass('introduce1_btn')[j] , 'back' );
+			}
+			getByClass('introduce1_con')[i].style.display="block";
+			/*点击后背景改变*/
+			addClass(getByClass('introduce1_btn')[i] , 'back');
+			hei2(i);
+			res_h=i;
+		}
+	}
 	// 轮播
 	var swiper = new Swiper('#swiper1', {
      //间隔

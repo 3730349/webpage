@@ -2,27 +2,20 @@
 /* CSS Document */
 
 #certify {
-
+	
 	position: relative;
-	/*width: 1200px;*/
 	width: 100%;
 	margin: 10px auto;
 }
 
 #certify .swiper-container {
-	/*padding-bottom: 60px;*/
 	height: 100%;
 }
 
 #certify  .swiper-slide {
 	width: 3.6rem;
 	height: 100%;
-	/*height: 4rem;*/
-	/*width: 20%;*/
-	/*height: 408px;*/
-	/*height: 4rem;*/
 	background: #fff;
-	/*box-shadow: 0 8px 30px #ddd;*/
 	border: 1px solid rgba(0,0,0,.2);
 }
 #certify  .swiper-slide .slide_img1{
@@ -49,17 +42,13 @@
 }
 
 #certify  .swiper-slide p {
-	/*line-height: 98px;*/
-	/*padding-top: 0;*/
 	width: 3rem;
 	text-align: center;
 	color: #636363;
 	font-size: 0.2rem;
 	padding: 10px 10px;
-	/*margin: auto;*/
 	font-weight: bold;
 	margin: auto;
-	/*margin: 0;*/
 }
 
 /*#certify .swiper-pagination {
