@@ -55,7 +55,22 @@
 		}
 
 window.onload=function () {
+	for (var i = 0; i <getByClass("introduce1").length; i++) {
+		console.log($('.introduce1').eq(i).css("display")==='block')
+		if ($('.introduce1').eq(i).css("display")==='block') {
+			getByClass("introduce")[0].style.height=getByClass("introduce1")[i].offsetHeight+"px";
+		}
+	}
 
+	window.onresize=function(){
+		for (var i = 0; i <getByClass("introduce1").length; i++) {
+			if ($('.introduce1').eq(i).css("display")==='block') {
+				getByClass("introduce")[0].style.height=getByClass("introduce1")[i].offsetHeight+"px";
+			}
+		}
+	}
+
+	
 	// var nav1=document.getElementById("nav1");
 	// var plan_btn=document.getElementsByClassName("plan_btn");
 	// var plan_btn_sm=document.getElementsByClassName("plan_btn_sm");

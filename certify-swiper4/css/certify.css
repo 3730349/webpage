@@ -16,6 +16,7 @@
 
 #certify  .swiper-slide {
 	width: 3.6rem;
+	height: 100%;
 	/*height: 4rem;*/
 	/*width: 20%;*/
 	/*height: 408px;*/
@@ -44,16 +45,16 @@
 	margin: auto;
 	text-align: center;
 	color: white;
-	font-size: 0.2rem;
+	font-size: 0.25rem;
 }
 
 #certify  .swiper-slide p {
 	/*line-height: 98px;*/
 	/*padding-top: 0;*/
-	width: 2rem;
+	width: 3rem;
 	text-align: center;
 	color: #636363;
-	font-size: 0.1rem;
+	font-size: 0.2rem;
 	padding: 10px 10px;
 	/*margin: auto;*/
 	font-weight: bold;
@@ -81,7 +82,7 @@
 }*/
 
 #certify #swiper2_btn_prev1 {
-	left:0%;
+	left:1%;
 	/*width: 5%;*/
 	height: 10%;
 	background-size: 100%;
@@ -93,7 +94,7 @@
 }*/
 
 #certify #swiper2_btn_next1 {
-	right: 0%;
+	right: 1%;
 	/*width: 5%;*/
 	height: 10%;
 	/*background: url(../images/wm_button_icon.png) no-repeat;*/
