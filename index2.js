@@ -58,8 +58,8 @@
 			var b=aa.getElementsByClassName("introduce1_con")[0];
 			for (var i = 0; i <getByClass("introduce1").length; i++) {
 				if ($('.introduce1').eq(i).css("display")==='block') {
-					if (b.offsetHeight<=176) {
-						getByClass("introduce1")[h1].style.height=176+"px";
+					if (b.offsetHeight<=300) {
+						getByClass("introduce1")[h1].style.height=300+"px";
 					}else {
 						getByClass("introduce1")[h1].style.height=b.offsetHeight+"px";
 					}
@@ -72,8 +72,8 @@
 		var hei2 = function (h2) {
 			for (var i = 0; i <getByClass("introduce1").length; i++) {
 				if ($('.introduce1').eq(i).css("display")==='block') {
-					if (getByClass("introduce1_con")[h2].offsetHeight<=176) {
-						getByClass("introduce1")[i].style.height=176+"px";
+					if (getByClass("introduce1_con")[h2].offsetHeight<=250) {
+						getByClass("introduce1")[i].style.height=250+"px";
 					}else {
 						getByClass("introduce1")[i].style.height=getByClass("introduce1_con")[h2].offsetHeight+"px";
 					}
@@ -86,7 +86,7 @@
 		window.onload=function () {
 				/*开始加载时*/
 				hei1(0);
-				var res_h;
+				var res_h=0;
 		window.onresize=function(){
 				/*窗口变化时触发*/
 				hei2(res_h);
