@@ -2,8 +2,6 @@
 /* CSS Document */
 
 #certify {
-<<<<<<< HEAD
-	
 	position: relative;
 	width: 100%;
 	margin: 10px auto;
@@ -127,10 +125,7 @@
 	background-position: 0 -139px;
 	background-size: 100%
 }*/
-=======
-}
-
-#certify .swiper-button-prev {
+/* #certify .swiper-button-prev {
 	left: -30px;
 	width: 45px;
 	height: 45px;
@@ -156,5 +151,5 @@
 #certify .swiper-button-next:hover {
 	background-position: 0 -139px;
 	background-size: 100%
-}
->>>>>>> 40c9c4aeed167c377299a3a210349b12cbe056e0
+} */
+

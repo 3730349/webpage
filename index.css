@@ -7,6 +7,7 @@
 }
 .nav {
 	width: 100%;
+	height: 80px;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -14,25 +15,22 @@
 	/*background: rgba(255,255,255,.7);*/
 	background: rgba(0,0,0,.5);
 	/*color: white;*/
+
 }
-.cu-header-small {
+.cu_header_small {
 	width: 100%;
+	height: 40px;
 	position: fixed;
 	top: 0;
 	z-index: 100;
 	background: rgba(0,0,0,.5);
 	display: none;
 }
-.tool {
-	width: 100%;
-	height: 100%;
-
-}
 #sp_btn {
 	float: right;
 	margin-right: 50px;
 	color: white;
-	font-size:24px;
+	font-size:28px;
 }
 .nav_btn1:hover {
 	text-decoration: none;
@@ -54,30 +52,34 @@
 	border-bottom: 1px solid rgba(255,255,255,.5);
 	line-height: 50px;
 	background: rgba(0,0,0,.3);
-	
-
 }
 .menu-list .item h3 {
-	font-size: 1em;
+	font-size: 0.28rem;
 }
-.cu-header-small .logo,.nav .logo {
-	width:5%;
-	/*height: 100%;*/
+.nav .logo {
+	width:50px;
+	height: 50px;
 	margin-left: 10%;
-	margin-top: 1%;
-	margin-bottom: 1%;
 	float: left;
+	background: url(img/lg.jpg) no-repeat;
+	background-size: 100%;
+	margin-top: 15px;
 }
-.cu-header-small .logo img,.nav .logo img{
-	width:80%;
-	margin: auto;
+.cu_header_small .small_logo {
+	width:30px;
+	height: 30px;
+	margin-left: 10%;
+	float: left;
+	background: url(img/lg.jpg) no-repeat;
+	background-size: 100%;
+	margin-top: 5px;
 }
+
 .nav .nav_btn {
 	float: right;
 	margin-right: 10%;
-	margin-top: 1%;
-	margin-bottom: 1%;
 	font-size: 1em;
+	margin-top: 0.2rem;
 
 }
 .nav_btn1 {
@@ -87,18 +89,18 @@
 	font-weight: bold;
 	color: rgba(255,255,255,.8);
 }
-.nav_btn2 {
-	font-size: 0.1em;
+.nav_btn1 h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 0.2rem;
+}
+.nav_btn .nav_btn2 {
+	font-size: 0.1rem;
 	color: rgba(255,255,255,.8);
 }
 .nav .nav_btn a{
 	margin-right: 20px;
 	float: left;
-
-}
-.nav_btn1 h3 {
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 /*轮播*/
@@ -192,6 +194,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
+	border-top: 1px solid;
 }
 .introduce1_con {
 	display: none;

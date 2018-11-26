@@ -11,28 +11,27 @@
 	<link rel="stylesheet" type="text/css" href="icon/iconfont.css">
 	<link rel="stylesheet" href="certify-swiper4/css/certify.css">
 	<script type="text/javascript">
-(function (doc, win) {
-        var docEl = doc.documentElement,
-            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            recalc = function () {
-                var clientWidth = docEl.clientWidth;
-                if (!clientWidth) return;
-                if(clientWidth>=640){
-                    docEl.style.fontSize = '100px';
-                }else{
-                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
-                }
-            };
-
-        if (!doc.addEventListener) return;
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
-</script>
+		(function (doc, win) {
+		        var docEl = doc.documentElement,
+		            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		            recalc = function () {
+		                var clientWidth = docEl.clientWidth;
+		                if (!clientWidth) return;
+		                if(clientWidth>=640){
+		                    docEl.style.fontSize = '100px';
+		                }else{
+		                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+		                }
+		            };
+		        if (!doc.addEventListener) return;
+		        win.addEventListener(resizeEvt, recalc, false);
+		        doc.addEventListener('DOMContentLoaded', recalc, false);
+		    })(document, window);
+	</script>
 </head>
 <style type="text/css">
 	@media (max-width: 768px) {
-		.cu-header-small {
+		.cu_header_small {
 		    display: block;
 		}
 		.slide-box2  {
@@ -50,9 +49,7 @@
 <body>
 	<div class="box">
 		<div class="nav" id="nav">
-			<div class="logo">
-				<img src="img/lg.jpg">
-			</div>
+			<div class="logo"></div>
 			<div class="nav_btn">
 				<a href="#swiper" class="nav_btn1 nav_btn3">
 					<h3>首&nbsp页</h3>
@@ -68,10 +65,8 @@
 					<h3 class="nav_btn2">About&nbspUs</h3></a>
 			</div>
 		</div>
-		<div id="cu-header-small" class="cu-header-small">
-		    <div class="logo">
-				<img src="img/lg.jpg">
-			</div>
+		<div id="cu_header_small" class="cu_header_small">
+		    <div class="small_logo"></div>
 		    <i class="iconfont icon-jiantou_liebiaozhankai" id="sp_btn"></i>
 
 		    <div class="menu-list" id="menu-list">
@@ -100,11 +95,11 @@
 	    	<div class="swiper-pagination" ></div>
 	    </div>	
 	    <div class="development">
-    		<h1>开发服务</h1>
-    		<h4>整合多平台技术,提供高效优质的应用开发服务</h4>
-	    	<img src="images/zfwl.gif">
+    		<h1 class="development1">开发服务</h1>
+    		<h4 class="development2">整合多平台技术,提供高效优质的应用开发服务</h4>
+	    	<img src="images/zfwl.gif" class="development_img">
 	    </div>
-	    <div id="certify">
+	    <div id="certify" class="certify">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide lb">
@@ -188,6 +183,7 @@
 				<div class="introduce1_Ri">
 					<div class="introduce1_con tt">
 						<img src="images/introduce1_1.gif">
+						<img src="images/introduce1_1.gif">
 					</div>					
 					<div class="introduce1_con">
 						<img src="images/introduce1_1.gif">
@@ -204,19 +200,11 @@
 			<div class="introduce1">
 				<div class="introduce1_Le">
 					<div class="introduce1_btn">单品分销</div>
-					<div class="introduce1_btn">微商分销</div>
-					<div class="introduce1_btn">门店分销</div>
 				</div>
 				<div class="introduce1_Ri">
 					<div class="introduce1_con tt">
 						<img src="images/introduce1_1.gif">
-					</div>										
-					<div class="introduce1_con">
-						<img src="images/introduce1_2.gif">
-					</div>					
-					<div class="introduce1_con">
-						<img src="images/introduce1_1.gif">
-					</div>
+					</div>										>
 				</div>
 			</div>			
 
@@ -231,13 +219,14 @@
 					</div>					
 					<div class="introduce1_con">
 						<img src="images/introduce1_1.gif">
+						<img src="images/introduce1_1.gif">
 					</div>
 				</div>
 			</div>			
 
 			<div class="introduce1">
 				<div class="introduce1_Le">
-					<div class="introduce1_btn">微商分销</div>
+					<div class="introduce1_btn">3+3分销</div>
 					<div class="introduce1_btn">门店分销</div>
 				</div>
 				<div class="introduce1_Ri">
